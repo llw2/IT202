@@ -23,6 +23,8 @@ function getDB(){
  	    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 	}
    	catch(Exception $e){
+            if($_SERVER['SERVER_NAME'] == "localhost")
+                echo("Did you connect to NJIT's VPN?<br>");
             error_log("getDB() error: " . var_export($e, true));
             $db = null;
         }
