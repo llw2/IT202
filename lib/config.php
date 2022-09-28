@@ -36,5 +36,5 @@ if (count($db_url) === 1) {
     $dbuser = $db_url["user"];
     $dbpass = $db_url["pass"];
     $dbdatabase       = substr($db_url["path"],1);
-}
+    config.php}
 ?>
