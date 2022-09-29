@@ -29,7 +29,7 @@ function getDB(){
             if($_SERVER['SERVER_NAME'] == "localhost") {
 		$whichMsg = shell_exec("which php 2>&1");
 		$whichMsg = substr_replace($whichMsg, ".ini", strlen($whichMsg)-1);
-		whichMsg = substr($whichMsg, 2, strlen($whichMsg));
+		$whichMsg = substr($whichMsg, 2, strlen($whichMsg));
 		if (!file_exists($whichMsg))
 		    echo "Setup Error: Missing php.ini file.<br>";
 		else
