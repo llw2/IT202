@@ -1,7 +1,6 @@
 .idea
 vendor/
 .env
-.envTest
 .DS_Store
 .vscode
-git
+.vs
