@@ -50,11 +50,11 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
     //TODO 4.1 replace 4.0: $email = sanitize_email($email);
     //validate
     //TODO 4.0: if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    //TODO 4.1 replace 4.0: if (!is_valid_email($email)) {
-        //TODO 4.4: flash("Username must only contain 3-16 characters a-z, 0-9, _, or -", "danger");
-        //TODo 4.4remove: echo "Invalid email address";
-        $hasError = true;
-    }
+    //TODO 4.1: if (!is_valid_email($email)) {
+    //TODO 4.2:     flash("Username must only contain 3-16 characters a-z, 0-9, _, or -", "danger");
+    //TODO 4.0:     echo "Invalid email address";
+    //TODO 4.0:     $hasError = true;
+    //TODO 4.0: }
 
     if (empty($password)) {
         echo "Password must not be empty";
