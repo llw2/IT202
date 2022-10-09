@@ -82,7 +82,7 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
         //TODO 5.0     echo "Successfully registered!";
         //TODO 5.1     echo with: flash("Successfully registered!", "success");
         //TODO 5.0 } catch (Exception $e) {
-        //TODO 5.0    echo "There was a problem registering";
+        //TODO 5.0    echo "There was a problem registering<br>";
         //TODO 5.0    echo "<pre>" . var_export($e, true) . "</pre>";
         //TODO 5.1    users_check_duplicate($e->errorInfo);
         //TODO 5.0 } 
