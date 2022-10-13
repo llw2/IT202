@@ -89,7 +89,7 @@ if (isset($_POST["email"]) && isset($_POST["password"]) && isset($_POST["confirm
     }
 }
 ?>
-<!-- TODO 5: adding flash() -->
+<!-- TODO 5.1: adding flash() -->
 <?php
 //require(__DIR__ . "/../../partials/flash.php");
 ?>
