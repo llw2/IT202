@@ -1,5 +1,5 @@
 <?php
-require(__DIR__ . "/../../partials/nav.php");
+require(__DIR__ . "/../partials/nav.php");
 ?>
 <form onsubmit="return validate(this)" method="POST">
     <div>
@@ -48,7 +48,9 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         $hasError = true;
     }
     if (!$hasError) {
+        echo "Welcome, $email";
         //TODO 4
+        /*
         $db = getDB();
         $stmt = $db->prepare("SELECT email, password from Users where email = :email");
         try {
@@ -72,6 +74,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         } catch (Exception $e) {
             echo "<pre>" . var_export($e, true) . "</pre>";
         }
+        */
     }
 }
 ?>
