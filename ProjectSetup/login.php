@@ -26,25 +26,30 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     $email = se($_POST, "email", "", false);
     $password = se($_POST, "password", "", false);
 
-    //TODO 3
+    //TODO 3.0
     $hasError = false;
     if (empty($email)) {
+        //TODO 3.1 flash("Email must not be empty", "danger");
         echo "Email must not be empty";
         $hasError = true;
     }
     //sanitize
-    $email = sanitize_email($email);
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+    //TODO 4.1 $email = sanitize_email($email);
     //validate
-    if (!is_valid_email($email)) {
-        echo "Invalid email address";
-        $hasError = true;
-    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    //TODO 4.1: if (!is_valid_email($email)) {
+    //TODO 4.2:     flash("Username must only contain 3-16 characters a-z, 0-9, _, or -", "danger");
+         echo "Invalid email address";
+         $hasError = true;
+     }
+
     if (empty($password)) {
-        echo "password must not be empty";
+        echo "Password must not be empty";
         $hasError = true;
     }
     if (strlen($password) < 8) {
-        echo "Password too short";
+        echo "Password must be >8 characters";
         $hasError = true;
     }
     if (!$hasError) {
