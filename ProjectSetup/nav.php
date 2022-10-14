@@ -25,7 +25,7 @@ session_start();
 //that way we don't need to include so many other files on each page
 //nav will pull in functions and functions will pull in db
 */
-require(__DIR__ . "/lib/functions.php");
+require(__DIR__ . "/../lib/functions.php");
 ?>
 <nav>
     <ul>
