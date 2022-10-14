@@ -66,7 +66,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                     $hash = $user["pwrdHash"];
                     unset($user["pwrdHash"]);
                     if (password_verify($password, $hash)) {
-                        echo "Weclome $email";
+                        echo "Welcome $email";
 TODO 4.0        */
         //TODO 5.0                $_SESSION["user"] = $user;
         //TODO 5.1                die(header("Location: home.php"));
