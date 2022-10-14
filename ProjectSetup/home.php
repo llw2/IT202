@@ -14,5 +14,5 @@ if (isset($_SESSION["user"]) && isset($_SESSION["user"]["email"])){
     echo "You're not logged in";
 }
 //shows session info
-echo "<pre>" . var_export($_SESSION, true) . "</pre>";
+//TODO 1 echo "<pre>" . var_export($_SESSION, true) . "</pre>";
 ?>
