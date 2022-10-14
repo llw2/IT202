@@ -34,8 +34,7 @@ require(__DIR__ . "/../lib/functions.php");
         <li><a href="register.php">Register</a></li>
         <li><a href="logout.php">Logout</a></li>
     </ul>
-    //TODO 2
-    /*
+    <!-- TODO 2
     <ul>
         <?php if (is_logged_in()) : ?>
             <li><a href="home.php">Home</a></li>
@@ -48,5 +47,5 @@ require(__DIR__ . "/../lib/functions.php");
             <li><a href="logout.php">Logout</a></li>
         <?php endif; ?>
     </ul>
-    */
+    -->
 </nav>
