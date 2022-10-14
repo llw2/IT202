@@ -67,19 +67,20 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                     unset($user["pwrdHash"]);
                     if (password_verify($password, $hash)) {
                         echo "Weclome $email";
-                        $_SESSION["user"] = $user;
-                        die(header("Location: home.php"));
-                    } else {
-                        echo "Invalid password";
-                    }
-                } else {
-                    echo "Email not found";
-                }
-            }
-        } catch (Exception $e) {
-            echo "<pre>" . var_export($e, true) . "</pre>";
-        }
         */
+        //TODO 5.0                $_SESSION["user"] = $user;
+        //TODO 5.0                die(header("Location: home.php"));
+        //TODO 4            } else {
+        //TODO 4                echo "Invalid password";
+        //TODO 4            }
+        //TODO 4        } else {
+        //TODO 4            echo "Email not found";
+        //TODO 4        }
+        //TODO 4    }
+//TODO 4        } catch (Exception $e) {
+//TODO 4            echo "<pre>" . var_export($e, true) . "</pre>";
+//TODO 4        }
+
     }
 }
 ?>
