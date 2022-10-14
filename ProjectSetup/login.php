@@ -69,7 +69,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                         echo "Weclome $email";
         */
         //TODO 5.0                $_SESSION["user"] = $user;
-        //TODO 5.0                die(header("Location: home.php"));
+        //TODO 5.1                die(header("Location: home.php"));
         //TODO 4            } else {
         //TODO 4                echo "Invalid password";
         //TODO 4            }
