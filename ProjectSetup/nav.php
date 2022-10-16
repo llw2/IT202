@@ -1,6 +1,6 @@
 <?php
 session_start();
-//session_start(); must be the first statement after <?php for it to work on NJIT webserver 
+//session_start(); must be the very first line after the <?php otherwise $_SESSION does not persist 
 //Note: this is to resolve cookie issues with port numbers
 /*TODO 1
 $domain = $_SERVER["HTTP_HOST"];
