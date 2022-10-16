@@ -1,4 +1,6 @@
 <?php
+session_start();
+//session_start(); must be the first statement after <?php for it to work on NJIT webserver 
 //Note: this is to resolve cookie issues with port numbers
 /*TODO 1
 $domain = $_SERVER["HTTP_HOST"];
@@ -20,7 +22,7 @@ if (($localWorks && $domain == "localhost") || $domain != "localhost") {
         "samesite" => "lax"
     ]);
 }
-session_start();
+
 //include functions here so we can have it on every page that uses the nav bar
 //that way we don't need to include so many other files on each page
 //nav will pull in functions and functions will pull in db
