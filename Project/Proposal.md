@@ -18,7 +18,7 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-  - [ ] \(mm/dd/yyyy of completion) User will be able to register a new account
+  - [x] \(mm/dd/yyyy of completion) User will be able to register a new account
         -  Link to related .md file: [Link Name](link url)  
   - [ ] \(mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials) 
         -  Link to related .md file: [Link Name](link url)  
