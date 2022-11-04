@@ -1,10 +1,10 @@
 <<<<<<< HEAD
-# Project Name: (Which Project)
+# Project Name: IT202 Project
 ## Project Summary: (Copy from proposal)
-## Github Link: (Prod Branch of Project Folder)
+## Github Link: (https://github.com/llw2/IT202)[https://github.com/llw2/IT202]
 ## Project Board Link: 
-## Website Link: (Heroku Prod of Project folder)
-## Your Name:
+## Website Link: (https://web.njit.edu/~llw2/llw2-prod)[https://web.njit.edu/~llw2/llw2-prod]
+## Your Name: Lori Watrous-deVersterre
 
 <!-- Line item / Feature template (use this for each bullet point) -- DO NOT DELETE THIS SECTION
 
@@ -18,7 +18,12 @@
 ### Proposal Checklist and Evidence
 
 - Milestone 1
-  - (duplicate template here for Milestone 1 features)  
+  - [ ] \(mm/dd/yyyy of completion) User will be able to register a new account
+        -  Link to related .md file: [Link Name](link url)  
+  - [ ] \(mm/dd/yyyy of completion) User will be able to login to their account (given they enter the correct credentials) 
+        -  Link to related .md file: [Link Name](link url)  
+  - [ ] \(mm/dd/yyyy of completion) User will be able to logout 
+        -  Link to related .md file: [Link Name](link url)  
 - Milestone 2
   - (duplicate template here for Milestone 1 features)
 - Milestone 3
