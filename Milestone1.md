@@ -31,7 +31,7 @@ expandless
 ### Deliverable 1: Feature: User will be able to register a new account (pts. 1)
 <ul>
 
-__SubTask 1:__ Add one or more **screenshots** of the application showing the form andvalidation errors per the feature requirements
+__SubTask 1:__ Add one or more **screenshots** of the application showing the form and validation errors per the feature requirements
 
 <ul>
 
@@ -43,7 +43,7 @@ __SubTask 1:__ Add one or more **screenshots** of the application showing the fo
 | [ ] #2  | 1      | Show invalid password validation |
 | [ ] #3  | 1      | Show passwords not much validation |
 | [ ] #4  | 1      | Show email not available validation (already registered) |
-| [ ] #5  | 1      | Show username not available validation (username is taken) |
+| [ ] #5  | 1      | Show Login Name not available validation (logName is taken) |
 | [ ] #6  | 1      | Show the form with valid data filled in before the form is submitted |
 
 #### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
@@ -82,7 +82,7 @@ __SubTask 3:__ Add the related pull request(s) for this feature
 
 </ul> 
 
-__SubTask 4:__ Explain briefly how the process/code works
+__SubTask 4:__ Explain briefly how the process/code works (to register)
 
 <ul>
 
@@ -149,7 +149,7 @@ __SubTask 3:__ Add the related pull request(s) for this feature
 
 </ul> 
 
-__SubTask 4:__ Explain briefly how the process/code works
+__SubTask 4:__ Explain briefly how the process/code works (to login)
 
 <ul>
 
@@ -214,7 +214,7 @@ __SubTask 4:__ Explain briefly how the process/code works. Describe the session 
 
 </ul></ul>
 
-### Deliverable 4: Feature: Users will be able to logout (pts. 1)
+### Deliverable 4: Feature: Basic Security Rules and Roles Implemented (pts. 1)
 <ul>
 
 __SubTask 1:__ Add a **screenshot** showing the logged out user can't access a login-protected page (may be the same as similar request). Message should show something about not being logged in
@@ -249,7 +249,7 @@ Make sure if the **screenshot** contains code that you have a relevant comment w
 
 </ul>
 
-__SubTask 4:__ Add a **screenshot** showing the logged out user can't access a login-protected page
+__SubTask 4:__ Add a **screenshot** showing the UserRole table with valid data. Caption which is your administrator
 
 <ul>
 
@@ -324,7 +324,7 @@ __SubTask 2:__ Add the related pull request(s) for this feature
 
 </ul> 
 
-__SubTask 3:__ Briefly explain your CSS at a high level
+__SubTask 3:__ Briefly explain your CSS at a high level. Highlight the basic styling you chose for the general elements like nav, forms, etc.
 
 <ul>
 
@@ -418,7 +418,7 @@ __SubTask 1:__ Add **screenshots** of the User Profile page validation messages 
 | [ ] #2  | 1      | Show email validation message               |
 | [ ] #3  | 1      | Show password validation message            |
 | [ ] #4  | 1      | Show password mismatch message              |
-| [ ] #5  | 1      | Show email/username already in use message  |
+| [ ] #5  | 1      | Show email/Login Name already in use message  |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
@@ -443,7 +443,7 @@ __SubTask 2:__ Add before and after **screenshots** showing the User table when 
 |    #    | Points | Details        |
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | There should be two screenshots          |
-| [ ] #2  | 1      | It should be highlighted or note which record changes between both screenshots along with what changed |
+| [ ] #2  | 1      | It should be highlighted or note which record changes <br>between both screenshots along with what changed |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
