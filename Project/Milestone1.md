@@ -4,8 +4,6 @@
 2. Create a milestone1.md file in your Project folder
 3. Git add/commit/push this empty file to Milestone1 (you'll need the link later)
 4. Fill in the deliverable items
-    - For each feature, add a direct link (or links) to the expected file the implements the
-feature from NJIT webserver prod (I.e, https://web.njit.edu/~llw2/llw2-prod/Project/register.php)
 5. Ensure your images display correctly in the sample markdown at the bottom
     - NOTE: You may want to try to capture as much checklist evidence in your screenshots
 as possible, you do not need individual screenshots and are recommended to combine
@@ -18,9 +16,9 @@ button
 10. Double check the images load when viewing the markdown file (points will be lost for
 invalid/non-loading images)
 11. Make a pull request from Milestone1 to dev and merge it (resolve any conflicts)
-    - Make sure everything looks ok on heroku dev
+    - Make sure everything looks ok on NJIT's webserver dev
 12. Make a pull request from dev to prod (resolve any conflicts)
-    - Make sure everything looks ok on heroku prod
+    - Make sure everything looks ok on NJIT's webserver prod
 13. Submit the direct link from github prod branch to the milestone1.md file (no other links will be
 accepted and will result in 0)
 expandless
