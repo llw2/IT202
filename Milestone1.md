@@ -299,10 +299,8 @@ __SubTask 1:__ Add a **screenshot** showing the successful logout message
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | Navigation should be styled |
 | [ ] #2  | 1      | Forms should be styled |
-| [ ] #3  | 1      | UI should be clean and not have my "hideous" example
-CSS |
-| [ ] #4  | 1      | Data output should be in a clean manner (i.e., table,
-row/cols, list groups, etc) Basically not exactly like dumped plaintext |
+| [ ] #3  | 1      | UI should be clean and not have my "hideous" example CSS |
+| [ ] #4  | 1      | Data output should be in a clean manner (i.e., table, row/cols, list groups, etc) Basically not exactly like dumped plaintext |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
@@ -439,8 +437,7 @@ __SubTask 2:__ Add before and after **screenshots** showing the User table when 
 |    #    | Points | Details        |
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | There should be two screenshots          |
-| [ ] #2  | 1      | It should be highlighted or note which record changes
-between both screenshots along with what changed |
+| [ ] #2  | 1      | It should be highlighted or note which record changes between both screenshots along with what changed |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
@@ -482,8 +479,7 @@ Incomplete Issues should not be closed
 |    #    | Points | Details        |
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | At least one issue item per Milestone feature |
-| [ ] #2  | 1      | Show from the Project Board perspective (may need
-multiple screenshots) |
+| [ ] #2  | 1      | Show from the Project Board perspective (may need multiple screenshots) |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
