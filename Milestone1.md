@@ -300,11 +300,17 @@ __SubTask 1:__ Add a **screenshot** showing the successful logout message
 | [ ] #1  | 1      | Navigation should be styled |
 | [ ] #2  | 1      | Forms should be styled |
 | [ ] #3  | 1      | UI should be clean and not have my "hideous" example CSS |
-| [ ] #4  | 1      | Data output should be in a clean manner (i.e., table, row/cols, list groups, etc) Basically not exactly like dumped plaintext |
+| [ ] #4  | 1      | Data output should be in a clean manner (i.e., table, row/cols, list groups, etc).<br>Basically not exactly like dumped plaintext |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > #1:  
+
+> #2:  
+
+> #3:  
+
+> #4:  
 
 </ul>
 
@@ -338,7 +344,7 @@ __SubTask 1:__ Add **screenshots** showing of some examples of errors/messages
 |    #    | Points | Details        |
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | This can include previous screenshots of protected pages and/or validation messages. |
-| [ ] #1  | 1      | Show at least 3 different "error" messages |
+| [ ] #2  | 1      | Show at least 3 different "error" messages |
 
 Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
