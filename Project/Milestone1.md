@@ -5,23 +5,17 @@
 3. Git add/commit/push this empty file to Milestone1 (you'll need the link later)
 4. Fill in the deliverable items
 5. Ensure your images display correctly in the sample markdown at the bottom
-    - NOTE: You may want to try to capture as much checklist evidence in your screenshots
-as possible, you do not need individual screenshots and are recommended to combine
-things when possible. Also, some screenshots may be reused if applicable.
+    - NOTE: You may want to try to capture as much checklist evidence in your screenshots as possible, you do not need individual screenshots and are recommended to combine things when possible. Also, some screenshots may be reused if applicable.
 6. Save the submission items
-7. Copy/paste the markdown from the "Copy markdown to clipboard link" or via the download
-button
+7. Copy/paste the markdown from the "Copy markdown to clipboard link" or via the download button
 8. Paste the code into the milestone1.md file or overwrite the file
 9. Git add/commit/push the md file to Milestone1
-10. Double check the images load when viewing the markdown file (points will be lost for
-invalid/non-loading images)
+10. Double check the images load when viewing the markdown file (points will be lost for invalid/non-loading images)
 11. Make a pull request from Milestone1 to dev and merge it (resolve any conflicts)
     - Make sure everything looks ok on NJIT's webserver dev
 12. Make a pull request from dev to prod (resolve any conflicts)
     - Make sure everything looks ok on NJIT's webserver prod
-13. Submit the direct link from github prod branch to the milestone1.md file (no other links will be
-accepted and will result in 0)
-expandless
+13. Submit the direct link from github prod branch to the milestone1.md file (no other links will be accepted and will result in 0)
 ## Desired Branch Name
 ### Milestone 1
 ## Deliverables
