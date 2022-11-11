@@ -54,7 +54,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         }
     }
     if (empty($password)) {
-        flash("password must not be empty");
+        flash("Password must not be empty");
         $hasError = true;
     }
     if (!is_valid_password($password)) {
@@ -65,23 +65,23 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         //flash("Welcome, $email");
         //TODO 4
         $db = getDB();
-        $stmt = $db->prepare("SELECT id, email, username, password from Users 
-        where email = :email or username = :email");
+        $stmt = $db->prepare("SELECT id, email, logName, pwrdHash from User 
+        where email = :email or logName = :email");
         try {
             $r = $stmt->execute([":email" => $email]);
             if ($r) {
                 $user = $stmt->fetch(PDO::FETCH_ASSOC);
                 if ($user) {
-                    $hash = $user["password"];
-                    unset($user["password"]);
+                    $hash = $user["pwrdHash"];
+                    unset($user["pwrdHash"]);
                     if (password_verify($password, $hash)) {
                         //flash("Weclome $email");
                         $_SESSION["user"] = $user; //sets our session data from db
                         //lookup potential roles
                         $stmt = $db->prepare("SELECT Roles.name FROM Roles 
-                        JOIN UserRoles on Roles.id = UserRoles.role_id 
-                        where UserRoles.user_id = :user_id and Roles.is_active = 1 and UserRoles.is_active = 1");
-                        $stmt->execute([":user_id" => $user["id"]]);
+                        JOIN UserRoles on Roles.id = UserRoles.roleID 
+                        where UserRoles.userID = :userID and Roles.is_active = 1 and UserRoles.is_active = 1");
+                        $stmt->execute([":userID" => $user["id"]]);
                         $roles = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetch all since we'll want multiple
                         //save roles or empty array
                         if ($roles) {
