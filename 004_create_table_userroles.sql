@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS  `UserRoles`
     `created`    timestamp default current_timestamp,
     `modified`   timestamp default current_timestamp on update current_timestamp,
     PRIMARY KEY (`id`),
-    FOREIGN KEY (`userID`) REFERENCES Users(`id`),
+    FOREIGN KEY (`userID`) REFERENCES User(`id`),
     FOREIGN KEY (`roleID`) REFERENCES Roles(`id`),
     UNIQUE KEY (`userID`, `roleID`)
 )
