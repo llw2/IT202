@@ -3,7 +3,7 @@ require(__DIR__ . "/../partials/nav.php");
 ?>
 <form onsubmit="return validate(this)" method="POST">
     <div>
-        <label for="email">Email/Username</label>
+        <label for="email">Email/Login Name</label>
         <input type="text" name="email" required />
     </div>
     <div>
@@ -54,7 +54,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         }
     }
     if (empty($password)) {
-        flash("Password must not be empty");
+        flash("password must not be empty");
         $hasError = true;
     }
     if (!is_valid_password($password)) {
@@ -80,7 +80,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                         //lookup potential roles
                         $stmt = $db->prepare("SELECT Roles.name FROM Roles 
                         JOIN UserRoles on Roles.id = UserRoles.roleID 
-                        where UserRoles.userID = :userID and Roles.is_active = 1 and UserRoles.is_active = 1");
+                        where UserRoles.userID = :userID and Roles.isActive = 1 and UserRoles.isActive = 1");
                         $stmt->execute([":userID" => $user["id"]]);
                         $roles = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetch all since we'll want multiple
                         //save roles or empty array
