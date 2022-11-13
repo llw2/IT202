@@ -42,7 +42,6 @@ try {
 } catch (PDOException $e) {
     flash(var_export($e->errorInfo, true), "danger");
 }
-
 //search for user by username
 $users = [];
 if (isset($_POST["logName"])) {
@@ -57,7 +56,7 @@ if (isset($_POST["logName"])) {
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             if ($results) {
                 $users = $results;
-            }
+            } 
         } catch (PDOException $e) {
             flash(var_export($e->errorInfo, true), "danger");
         }
@@ -70,7 +69,7 @@ if (isset($_POST["logName"])) {
 ?>
 <h1>Assign Roles</h1>
 <form method="POST">
-    <input type="search" name="username" placeholder="Login Name search" />
+    <input type="search" name="logName" placeholder="Login Name search" />
     <input type="submit" value="Search" />
 </form>
 <form method="POST">
@@ -89,7 +88,7 @@ if (isset($_POST["logName"])) {
                         <?php foreach ($users as $user) : ?>
                             <tr>
                                 <td>
-                                    <label for="user_<?php se($user, 'id'); ?>"><?php se($user, "username"); ?></label>
+                                    <label for="user_<?php se($user, 'id'); ?>"><?php se($user, "logName"); ?></label>
                                     <input id="user_<?php se($user, 'id'); ?>" type="checkbox" name="users[]" value="<?php se($user, 'id'); ?>" />
                                 </td>
                                 <td><?php se($user, "roles", "No Roles"); ?></td>
