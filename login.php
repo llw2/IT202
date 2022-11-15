@@ -3,8 +3,8 @@ require(__DIR__ . "/../partials/nav.php");
 ?>
 <form onsubmit="return validate(this)" method="POST">
     <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" required />
+        <label for="email">Email/Login Name</label>
+        <input type="text" name="email" required />
     </div>
     <div>
         <label for="pw">Password</label>
@@ -17,6 +17,8 @@ require(__DIR__ . "/../partials/nav.php");
         //TODO 1: implement JavaScript validation
         //ensure it returns false for an error and true for success
 
+        //TODO update clientside validation to check if it should
+        //valid email or username
         return true;
     }
 </script>
@@ -32,20 +34,28 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         flash("Email must not be empty");
         $hasError = true;
     }
-    //sanitize
-    //$email = filter_var($email, FILTER_SANITIZE_EMAIL);
-    $email = sanitize_email($email);
-    //validate
-    /*if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        flash("Invalid email address");
-        $hasError = true;
-    }*/
-    if (!is_valid_email($email)) {
-        flash("Invalid email address");
-        $hasError = true;
+//    if (str_contains($email, "@")) {
+    if (is_email($email)) {
+        //sanitize
+        //$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $email = sanitize_email($email);
+        //validate
+        /*if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            flash("Invalid email address");
+            $hasError = true;
+        }*/
+        if (!is_valid_email($email)) {
+            flash("Invalid email address");
+            $hasError = true;
+        }
+    } else {
+        if (!is_valid_username($email)) {
+            flash("Invalid username");
+            $hasError = true;
+        }
     }
     if (empty($password)) {
-        flash("Password must not be empty");
+        flash("password must not be empty");
         $hasError = true;
     }
     if (!is_valid_password($password)) {
@@ -57,7 +67,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         //TODO 4
         $db = getDB();
         $stmt = $db->prepare("SELECT id, email, logName, pwrdHash from User 
-        where email = :email");
+        where email = :email or logName = :email");
         try {
             $r = $stmt->execute([":email" => $email]);
             if ($r) {
@@ -66,21 +76,16 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
                     $hash = $user["pwrdHash"];
                     unset($user["pwrdHash"]);
                     if (password_verify($password, $hash)) {
-                        //flash("Welcome $email");
+                        //flash("Weclome $email");
                         $_SESSION["user"] = $user; //sets our session data from db
-                        try {
-                            //lookup potential roles
-                            $stmt = $db->prepare("SELECT Roles.name FROM Roles 
-                                JOIN UserRoles on Roles.id = UserRoles.roleID 
-                                WHERE UserRoles.userID = :userID 
-                                AND Roles.isActive = 1 and UserRoles.isActive = 1");
-                            $stmt->execute([":userID" => $user["id"]]);
-                            $roles = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetch all since we'll want multiple
-                        } catch (Exception $e) {
-                            error_log(var_export($e, true));
-                        }
+                        //lookup potential roles
+                        $stmt = $db->prepare("SELECT Roles.name FROM Roles 
+                        JOIN UserRoles on Roles.id = UserRoles.roleID 
+                        where UserRoles.userID = :userID and Roles.isActive = 1 and UserRoles.isActive = 1");
+                        $stmt->execute([":userID" => $user["id"]]);
+                        $roles = $stmt->fetchAll(PDO::FETCH_ASSOC); //fetch all since we'll want multiple
                         //save roles or empty array
-                        if (isset($roles)) {
+                        if ($roles) {
                             $_SESSION["user"]["roles"] = $roles; //at least 1 role
                         } else {
                             $_SESSION["user"]["roles"] = []; //no roles
@@ -100,5 +105,5 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     }
 }
 ?>
-<?php 
-require(__DIR__."/../partials/flash.php");
+<?php
+require(__DIR__ . "/../partials/flash.php");

@@ -1,4 +1,5 @@
 <?php
+
 //this is an extra condition added to "resolve" the localhost issue for the session cookie
 if ($_SERVER["HTTP_HOST"] == "web.njit.edu") {
     session_set_cookie_params([
