@@ -34,7 +34,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         flash("Email must not be empty");
         $hasError = true;
     }
-    if (str_contains($email, "@")) {
+//    if (str_contains($email, "@")) {
+    if (is_email($email)) {
         //sanitize
         //$email = filter_var($email, FILTER_SANITIZE_EMAIL);
         $email = sanitize_email($email);
