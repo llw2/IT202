@@ -1,7 +1,7 @@
 <?php
 
-require(__DIR__ . "/../../lib/db.php");
-require(__DIR__ . "/../../lib/functions.php");
+require(__DIR__ . "/../lib/db.php");
+require(__DIR__ . "/../lib/functions.php");
 
 ?>
 <nav>
