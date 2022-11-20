@@ -1,4 +1,4 @@
-# Milestone2 Bank Projects (pts. 10.00)
+# IT202 Milestone2 Bank Project (pts. 10.00)
 ## Instructions
 1. Checkout Milestone2 branch
 2. Create a milestone2.md file in your Project folder
@@ -46,7 +46,7 @@ __SubTask 3:__ Explain the purpose and usage of these two entries and how they r
 
 </ul>
 
-__SubTask 4:__ Add the related pull request(s) for this feature
+__SubTask 4:__ Add the related pull request link(s)
 
 <ul>
 
@@ -69,7 +69,9 @@ __SubTask 1:__ Add a **screenshot** showing the requested links/navigation
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | Links in the navbar don't count (it's ok if some are duplicated here and navbar) |
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -83,7 +85,7 @@ __SubTask 2:__ Explain which ones are working for this milestone
 
 </ul>
 
-__SubTask 3:__ Add the related pull request(s) for this feature
+__SubTask 3:__ Add the related pull request link(s)
 
 <ul>
 
@@ -100,7 +102,7 @@ __SubTask 1:__ Add a **screenshot** showing the Create Account Page. Have valid 
 
 <ul>
 
-Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:  
 
@@ -127,7 +129,9 @@ __SubTask 3:__ Add a **screenshot** showing the transaction generated from the i
 
 <ul>
 
-Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:  
 
@@ -150,7 +154,7 @@ process including the transaction logic.
 
 </ul>
 
-__SubTask 5:__ Add the related pull request(s) for this feature
+__SubTask 5:__ Add the related pull request link(s)
 
 <ul>
 
@@ -185,7 +189,9 @@ __SubTask 1:__ Add a **screenshot** showing the user's account list view (show 5
 | [ ] #1  | 1      | There should be at least 5                               |
 | [ ] #2  | 1      | Show account number, account type, modified, and balance |
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -199,7 +205,7 @@ __SubTask 2:__ Briefly explain how the page is displayed and the data lookup occ
 
 </ul>
 
-__SubTask 3:__ Add the related pull request(s)
+__SubTask 3:__ Add the related pull request link(s)
 
 <ul>
 
@@ -234,7 +240,9 @@ __SubTask 1:__ Add a **screenshot** of an account's transaction history
 | [ ] #2  | 1      | Account: Show account number, account type, balance, opened/created date of the selected account (from Accounts table) |
 | [ ] #3  | 1      | Transactions: Show the src/dest account numbers (not account id), the transaction type, the change in balance, when it occurred, expected total, and the memo |
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -249,7 +257,7 @@ __SubTask 2:__ Explain how the lookup and display occurs.
 
 </ul>
 
-__SubTask 3:__ Add the related pull request(s)
+__SubTask 3:__ Add the related pull request link(s)
 
 <ul>
 
@@ -276,7 +284,9 @@ __SubTask 1:__ Add a **screenshot** of the Deposit Page. Show valid data filled 
 
 <ul>
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -296,7 +306,9 @@ __SubTask 3:__ Add a **screenshot** of a validation error for negative numbers
 
 <ul>
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -316,7 +328,9 @@ __SubTask 5:__ Show two **screenshots** of success messages for a deposit and aw
 
 <ul>
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -333,7 +347,9 @@ __SubTask 6:__ Add a **screenshot** of the transaction pairs in the DB for the a
 | [ ] #1  | 1      | Expected total should be accurate for both accounts |
 | [ ] #2  | 1      | Highlight or mention in caption which records to look at |
 
-<br>Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
 > Screenshot:   
 
@@ -348,7 +364,7 @@ __SubTask 7:__ Briefly explain how transactions work.
 
 </ul>
 
-__SubTask 8:__ Add the related pull request(s)
+__SubTask 8:__ Add the related pull request link(s)
 
 <ul>
 
@@ -385,15 +401,11 @@ __SubTask 1:__ Add **screenshots** showing which issues are done/closed (project
 | [ ] #3  | 0      | May require multiple images |
 | [ ] #4  | 1      | In the caption briefly explain any incomplete items |
 
-Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
+<br>
+
+#### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
-> #1:  
-
-> #2:  
-
-> #3:
-
-> #4:
+> Screenshot(s):
 
 </ul>
 
@@ -405,7 +417,4 @@ __SubTask 2:__ Add a link to your NJIT webserver prod projects login page
 
 > URL: 
 
-</ul>
-
- </ul>
-
+</ul></ul>
