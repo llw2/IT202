@@ -68,7 +68,7 @@ try {
                     <td><?php se($role, "id"); ?></td>
                     <td><?php se($role, "name"); ?></td>
                     <td><?php se($role, "description"); ?></td>
-                    <td><?php echo (se($role, "isAactive", 0, false) ? "active" : "disabled"); ?></td>
+                    <td><?php echo (se($role, "isActive", 0, false) ? "active" : "disabled"); ?></td>
                     <td>
                         <form method="POST">
                             <input type="hidden" name="roleID" value="<?php se($role, 'id'); ?>" />
