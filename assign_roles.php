@@ -49,9 +49,9 @@ if (isset($_POST["username"])) {
     $username = se($_POST, "username", "", false);
     if (!empty($username)) {
         $db = getDB();
-        $stmt = $db->prepare("SELECT User.id, username, (SELECT GROUP_CONCAT(name, ' (' , IF(ur.isActive = 1,'active','inactive') , ')') from 
+        $stmt = $db->prepare("SELECT User.id, logName, (SELECT GROUP_CONCAT(name, ' (' , IF(ur.isActive = 1,'active','inactive') , ')') from 
         UserRoles ur JOIN Roles on ur.roleID = Roles.id WHERE ur.userID = User.id) as roles
-        from User WHERE username like :username");
+        from User WHERE logName like :username");
         try {
             $stmt->execute([":username" => "%$username%"]);
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
