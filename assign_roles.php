@@ -8,16 +8,16 @@ if (!has_role("Admin")) {
 }
 //attempt to apply
 if (isset($_POST["users"]) && isset($_POST["roles"])) {
-    $user_ids = $_POST["users"]; //se() doesn't like arrays so we'll just do this
-    $role_ids = $_POST["roles"]; //se() doesn't like arrays so we'll just do this
-    if (empty($user_ids) || empty($role_ids)) {
+    $userIDs = $_POST["users"]; //se() doesn't like arrays so we'll just do this
+    $roleIDs = $_POST["roles"]; //se() doesn't like arrays so we'll just do this
+    if (empty($userIDs) || empty($roleIDs)) {
         flash("Both users and roles need to be selected", "warning");
     } else {
         //for sake of simplicity, this will be a tad inefficient
         $db = getDB();
-        $stmt = $db->prepare("INSERT INTO UserRoles (user_id, role_id, is_active) VALUES (:uid, :rid, 1) ON DUPLICATE KEY UPDATE is_active = !is_active");
-        foreach ($user_ids as $uid) {
-            foreach ($role_ids as $rid) {
+        $stmt = $db->prepare("INSERT INTO UserRoles (userID, roleID, isActive) VALUES (:uid, :rid, 1) ON DUPLICATE KEY UPDATE isActive = !isActive");
+        foreach ($userIDs as $uid) {
+            foreach ($roleIDs as $rid) {
                 try {
                     $stmt->execute([":uid" => $uid, ":rid" => $rid]);
                     flash("Updated role", "success");
@@ -32,7 +32,7 @@ if (isset($_POST["users"]) && isset($_POST["roles"])) {
 //get active roles
 $active_roles = [];
 $db = getDB();
-$stmt = $db->prepare("SELECT id, name, description FROM Roles WHERE is_active = 1 LIMIT 10");
+$stmt = $db->prepare("SELECT id, name, description FROM Roles WHERE isActive = 1 LIMIT 10");
 try {
     $stmt->execute();
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -49,9 +49,9 @@ if (isset($_POST["username"])) {
     $username = se($_POST, "username", "", false);
     if (!empty($username)) {
         $db = getDB();
-        $stmt = $db->prepare("SELECT Users.id, username, (SELECT GROUP_CONCAT(name, ' (' , IF(ur.is_active = 1,'active','inactive') , ')') from 
-        UserRoles ur JOIN Roles on ur.role_id = Roles.id WHERE ur.user_id = Users.id) as roles
-        from Users WHERE username like :username");
+        $stmt = $db->prepare("SELECT User.id, username, (SELECT GROUP_CONCAT(name, ' (' , IF(ur.isActive = 1,'active','inactive') , ')') from 
+        UserRoles ur JOIN Roles on ur.roleID = Roles.id WHERE ur.userID = User.id) as roles
+        from User WHERE username like :username");
         try {
             $stmt->execute([":username" => "%$username%"]);
             $results = $stmt->fetchAll(PDO::FETCH_ASSOC);

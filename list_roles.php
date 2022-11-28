@@ -7,20 +7,20 @@ if (!has_role("Admin")) {
     die(header("Location: $BASE_PATH" . "home.php"));
 }
 //handle the toggle first so select pulls fresh data
-if (isset($_POST["role_id"])) {
-    $role_id = se($_POST, "role_id", "", false);
-    if (!empty($role_id)) {
+if (isset($_POST["roleID"])) {
+    $roleID = se($_POST, "roleID", "", false);
+    if (!empty($roleID)) {
         $db = getDB();
-        $stmt = $db->prepare("UPDATE Roles SET is_active = !is_active WHERE id = :rid");
+        $stmt = $db->prepare("UPDATE Roles SET isActive = !isActive WHERE id = :rid");
         try {
-            $stmt->execute([":rid" => $role_id]);
+            $stmt->execute([":rid" => $roleID]);
             flash("Updated Role", "success");
         } catch (PDOException $e) {
             flash(var_export($e->errorInfo, true), "danger");
         }
     }
 }
-$query = "SELECT id, name, description, is_active from Roles";
+$query = "SELECT id, name, description, isActive from Roles";
 $params = null;
 if (isset($_POST["role"])) {
     $search = se($_POST, "role", "", false);
@@ -71,10 +71,10 @@ try {
                         <td><?php se($role, "id"); ?></td>
                         <td><?php se($role, "name"); ?></td>
                         <td><?php se($role, "description"); ?></td>
-                        <td><?php echo (se($role, "is_active", 0, false) ? "active" : "disabled"); ?></td>
+                        <td><?php echo (se($role, "isActive", 0, false) ? "active" : "disabled"); ?></td>
                         <td>
                             <form method="POST">
-                                <input type="hidden" name="role_id" value="<?php se($role, 'id'); ?>" />
+                                <input type="hidden" name="roleID" value="<?php se($role, 'id'); ?>" />
                                 <?php if (isset($search) && !empty($search)) : ?>
                                     <?php /* if this is part of a search, lets persist the search criteria so it reloads correctly*/ ?>
                                     <input type="hidden" name="role" value="<?php se($search, null); ?>" />
