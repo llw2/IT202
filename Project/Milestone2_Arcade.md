@@ -1,4 +1,4 @@
-# IT202 Milestone2 Bank Project (pts. 10.00)
+# IT202 Milestone2 Arcade Project (pts. 10.00)
 ## Instructions
 1. Checkout Milestone2 branch
 2. Create a milestone2.md file in your Project folder
@@ -106,7 +106,6 @@ __SubTask 3:__ Briefly describe the code flow of saving a score from the game
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | Clearly mention which score option you chose for this feature (copy the text from the proposal doc and paste it in the text area) |
 | [ ] #2  | 1      | Clearly mention each high level and logical step that gets the score to persist in the db starting from the game logic |
-
 <br>
 
 > Explanation:  
@@ -126,12 +125,9 @@ __SubTask 4:__ Add the related pull request link(s)
 ### Deliverable 3: User's last 10 scores (pts. 1.75)
 <ul>
 
-__SubTask 1:__ Add a **screenshot** showing the latest scores for the user from their profile
-page. Show at least a few scores.
+__SubTask 1:__ Add a **screenshot** showing the latest scores for the user from their profile page. Show at least a few scores.
 
 <ul>
-
-<br>
 
 #### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
