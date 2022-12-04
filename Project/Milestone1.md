@@ -33,10 +33,9 @@ __SubTask 1:__ Add one or more **screenshots** of the application showing the fo
 | ------- | ------ | --------------:|
 | [ ] #1  | 1      | Show invalid email validation |
 | [ ] #2  | 1      | Show invalid password validation |
-| [ ] #3  | 1      | Show passwords not much validation |
-| [ ] #4  | 1      | Show email not available validation (already registered) |
-| [ ] #5  | 1      | Show Login Name not available validation (logName is taken) |
-| [ ] #6  | 1      | Show the form with valid data filled in before the form is submitted |
+| [ ] #3  | 1      | Show email not available validation (already registered) |
+| [ ] #4  | 1      | Show Login Name not available validation (logName is taken) |
+| [ ] #5  | 1      | Show the form with valid data filled in before the form is submitted |
 
 #### Make sure if the **screenshot** contains code that you have a relevant comment with your ucid, date, and explanation of what you're attempting, if not max grade for this item is 75%.
 #### Provide a Github URL to each **screenshot** you've uploaded with a caption
@@ -49,8 +48,6 @@ __SubTask 1:__ Add one or more **screenshots** of the application showing the fo
 > #4: 
 
 > #5: 
-
-> #6: 
 
 </ul>
 
