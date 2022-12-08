@@ -1,1 +1,2 @@
-# IT202 - Setup for M5 Project task management
+# IT202 - Simple gamebackend and Score saving example
+
