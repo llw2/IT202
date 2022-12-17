@@ -1,4 +1,5 @@
 # IT202 - Simple gamebackend with frontend partial code and Score saving to support saving scores automatically when a game determines it is over.
+# Based on Matt Toegel code
 
 NOTES:
 * __save_score.php:__ needs lib function access 
